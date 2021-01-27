@@ -1,0 +1,27 @@
+---
+title: "TidyTuesday Week 5: Plastic Pollution"
+author: "KCtt457"
+date: "1/27/2021"
+output: pdf_document
+---
+
+## TidyTuesday Week 5: Plastic Pollution
+
+Challenge found at [https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-26/readme.md](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-26/readme.md)
+
+```{r, include=FALSE}
+# Load libraries
+library(tidyverse)
+
+# Load the data
+plastics <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-01-26/plastics.csv')
+```
+
+```{r}
+# View the data
+glimpse(plastics)
+```
+
+## Clean the data
+
+Question: Total plastics collected in different countries
